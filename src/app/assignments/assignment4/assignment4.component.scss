@@ -1,0 +1,30 @@
+p {
+    height: 100%;
+    width: inherit;
+    font-size: 5rem; /* Adjust text size */
+    font-weight: bold;
+    background: linear-gradient(90deg, #6961ff, #a477f2, #495b81, #a17fe0, #5d9cec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 20px auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: gradientMove 3s infinite linear;
+    align-content: center;
+    position: fixed;
+    left: 25%;
+    top: -5%;
+  }
+
+  
+  /* Keyframe animation to move gradient */
+  @keyframes gradientMove {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  

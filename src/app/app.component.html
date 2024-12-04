@@ -1,21 +1,8 @@
-<header class="header">
-  <a [routerLink]="['']">
-  <img src="assets/image/assets/remiges-logo.svg" alt="Remiges Logo" class="logo" />
-  </a>
-  <h1>Assignments</h1>
-</header>
-
+<app-header (sidebarToggle)="toggleSidebar()"></app-header>
 <div class="main-container">
-  <nav class="sidebar">
-    <ul>
-      <li><a [routerLink]="['/assignment1']">Assignment 1</a></li>
-      <li><a [routerLink]="['/assignment2']">Assignment 2</a></li>
-      <li><a [routerLink]="['/assignment3']">Assignment 3</a></li>
-      <!-- Add more assignments as needed -->
-    </ul>
-  </nav>
-
-  <div class="content">
+  <app-sidebar></app-sidebar>
+  <div class="contents">
     <router-outlet></router-outlet>
   </div>
 </div>
+

@@ -3,7 +3,7 @@ import { Component, Signal, signal, WritableSignal } from '@angular/core';
 @Component({
   selector: 'app-assignment2',
   imports: [],
-  templateUrl: './assignment2.component.html',
+  template: "<p>Hello, {{name()}} !!</p>",
   styleUrl: './assignment2.component.css'
 })
 export class Assignment2Component {

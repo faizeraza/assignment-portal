@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .logo {
+      height: 40px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

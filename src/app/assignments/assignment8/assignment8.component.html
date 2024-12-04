@@ -1,0 +1,9 @@
+<div>
+    <h2>Lifecycle Hooks Demonstration</h2>
+    <p>{{ data }}</p>
+    <button (click)="updateData()">Update Data</button>
+    <ul>
+        <li *ngFor="let message of lifecycleMessages">{{ message }}</li>
+    </ul>
+  </div>
+  

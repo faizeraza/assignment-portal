@@ -1,0 +1,65 @@
+/* General styles for the LifeCycle component */
+div {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading styles */
+  h2 {
+    color: #007bff;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  /* Paragraph styles */
+  p {
+    font-size: 18px;
+    color: #333;
+    margin: 12px 0;
+    text-align: center;
+  }
+  
+  /* Button styles */
+  button {
+    display: block;
+    margin: 16px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #007bff;
+  }
+  
+  button:active {
+    background-color: #0056b3;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #bbdefb;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #0d47a1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

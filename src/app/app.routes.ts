@@ -16,6 +16,31 @@ export const routes: Routes = [
             return import ('./assignments/assignment3/assignment3.component').then((m)=> m.Assignment3Component);
         }
      },
+     { path: 'assignment4', 
+        loadComponent:() => {
+            return import ('./assignments/assignment4/assignment4.component').then((m)=> m.Assignment4Component);
+        }
+     },
+     { path: 'assignment5', 
+        loadComponent:() => {
+            return import ('./assignments/assignment5/assignment5.component').then((m)=> m.Assignment5Component);
+        }
+     },
+     { path: 'assignment6', 
+        loadComponent:() => {
+            return import ('./assignments/assignment6/assignment6.component').then((m)=> m.Assignment6Component);
+        }
+     },
+     { path: 'assignment7', 
+        loadComponent:() => {
+            return import ('./assignments/assignment7/assignment7.component').then((m)=> m.Assignment7Component);
+        }
+     },
+     { path: 'assignment8', 
+        loadComponent:() => {
+            return import ('./assignments/assignment8/assignment8.component').then((m)=> m.Assignment8Component);
+        }
+     },
      { path: '', 
         pathMatch: 'full',
         loadComponent:() => {

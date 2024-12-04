@@ -1,5 +1,9 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
 *{
+    font-family: Lexend;
+    overflow-y: hidden;
+    overflow-x: hidden;
     margin: 0;
-    font-size: x-large;
-    font-family:'Courier New', Courier, monospace;
 }

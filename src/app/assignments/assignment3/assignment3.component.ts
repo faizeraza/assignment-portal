@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, WritableSignal } from '@angular/core';
 
 @Component({
   selector: 'app-assignment3',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './assignment3.component.css'
 })
 export class Assignment3Component {
-
+  name: WritableSignal<string> = signal("Faizan Raza");
 }
