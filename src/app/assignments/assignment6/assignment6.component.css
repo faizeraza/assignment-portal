@@ -1,12 +1,12 @@
 .greeting {
-    align-items: center;
-    margin: 20px auto;
-    align-content: center;
-    text-align: center;
-    position: fixed;
-    top: 35%;
-    left: 50%;
-  }
+  align-items: center;
+  margin: 20px auto;
+  align-content: center;
+  text-align: center;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
   
   button {
     background-color: #007bff;
@@ -25,8 +25,8 @@
   }
 
   .reset{
-    top: 74%;
-    left: 57%;
+    top: 70%;
+    left: 46.5%;
     position: fixed;
     padding: 20px 10px;
   }
