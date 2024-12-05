@@ -67,8 +67,9 @@ export class Assignment8Component implements
       this.logger.log(message); // Log the message to the console
     }
 
-    updateData(): void {
+    updateData(event:Event): void {
       this.data = 'Updated at ' + new Date().toLocaleTimeString();
+      event.stopPropagation();
     }
 
 }

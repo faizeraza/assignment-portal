@@ -6,9 +6,17 @@ import { environment } from '../environments/environmet';
   providedIn: 'root',
 })
 export class LoggerService {
-  log(msg: string): void {
+  log(message: string): void {
     if (!environment.production) {
-      console.log(msg);
+      console.log(`[LOG]: ${message}`);
     }
+  }
+
+  error(message: string): void {
+    console.error(`[ERROR]: ${message}`);
+  }
+
+  warn(message: string): void {
+    console.warn(`[WARNING]: ${message}`);
   }
 }

@@ -1,9 +1,11 @@
-<div>
+<div class="subHeader">
     <h2>Lifecycle Hooks Demonstration</h2>
     <p>{{ data }}</p>
-    <button (click)="updateData()">Update Data</button>
-    <ul>
-        <li *ngFor="let message of lifecycleMessages">{{ message }}</li>
-    </ul>
+    <button (click)="updateData($event)">Update Data</button>
+    <div class="table">
+        <ul>
+            <li *ngFor="let message of lifecycleMessages">{{ message }}</li>
+        </ul>
+    </div>
   </div>
   

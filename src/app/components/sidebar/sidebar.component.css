@@ -6,7 +6,7 @@
   height: 100vh;
   padding: 20px;
   width: 200px;
-  position: fixed; /* Ensures the sidebar stays in place */
+/*  position: fixed; /* Ensures the sidebar stays in place */
   text-align: center;
   overflow-y: scroll;
 }

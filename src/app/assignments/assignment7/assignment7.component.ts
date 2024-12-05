@@ -18,14 +18,15 @@ export class Assignment7Component {
     this.logger.log("Using a logger service");
   }
   
-  displayProfile(): void {
+  displayProfile(event: Event): void {
     this.showProfile = true; 
     this.showreset = true
-
+    event.stopPropagation();
   }
 
-  reset(): void {
+  reset(event: Event): void {
     this.showProfile = false; 
     this.showreset = false;
+    event.stopPropagation();
   }
 }

@@ -1,5 +1,5 @@
 /* General styles for the LifeCycle component */
-div {
+.subHeader {
     border: 2px solid #007bff;
     border-radius: 8px;
     padding: 16px;
@@ -7,7 +7,20 @@ div {
     width: 60%;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
+    position: fixed;
+    left: 25%;
+    top: 20%;
+  }
+
+  .table {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
   }
   
   /* Heading styles */
@@ -51,6 +64,7 @@ div {
   ul {
     list-style-type: none;
     padding: 0;
+    
   }
   
   li {
