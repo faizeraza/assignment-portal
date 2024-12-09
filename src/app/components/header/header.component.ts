@@ -9,9 +9,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink]
 })
 export class HeaderComponent {
-  @Output() sidebarToggle = new EventEmitter<void>();
+  @Output() homeClicked = new EventEmitter<string>();
 
-  toggleSidebar() {
-    this.sidebarToggle.emit();
+  homeClicker() {
+    this.homeClicked.emit('home');
   }
 }

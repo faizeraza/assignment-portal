@@ -1,4 +1,5 @@
 {
+    "home": "",
     "1": "Setup a simple Angular project with a command line. Change the default text of the 'app/src/app.component.html' to 'Hello World'. Change the app title to 'My-Ng', Change the default favicon by downloading the image from the provided link. Understand concepts like (i) folder structure, (ii) important Angular project specific config files, (iii) Bootstrapping process, (iv) ng-cli commands like 'ng serve', 'ng generate'.",
     "2": "In the above Angular app create a new component 'Home' using 'ng generate' and define a selector as <my-home> using an inline template. Specify your name in the HTML paragraph tag in the template.",
     "3": "Modify the above code to use a template defined within a separate HTML view file.",

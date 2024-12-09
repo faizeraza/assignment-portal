@@ -1,9 +1,12 @@
-<app-header (sidebarToggle)="toggleSidebar()"></app-header>
+<app-header (homeClicked)="onAssignmentNumberSelected($event)" ></app-header>
 <div class="main-container">
   <app-sidebar (assignmentNumber)="onAssignmentNumberSelected($event)"></app-sidebar>
   <div class="contents">
     <div class="card" (click)="flipCard()" [class.is-flipped]="isFlipped">
-      <div class="card-front">
+      <div class="card-front" *ngIf="cardContent==='';">
+        <p style="width: 80%;"><app-home></app-home></p>
+      </div>
+      <div class="card-front" *ngIf="cardContent!=='';">
         <p style="width: 80%;">{{cardContent}}</p>
       </div>
       <div class="card-back">
@@ -12,6 +15,5 @@
         </div>
       </div>
     </div>
-    <!-- <router-outlet></router-outlet> -->
   </div>
 </div>

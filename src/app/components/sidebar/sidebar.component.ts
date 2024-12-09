@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, OnInit } from '@angular/core';
-import { Router, NavigationEnd, RouterLink } from '@angular/router';
+import { Router, NavigationEnd, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',

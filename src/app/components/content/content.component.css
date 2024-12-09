@@ -1,0 +1,6 @@
+.contents {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    perspective: 1000px;
+  }
