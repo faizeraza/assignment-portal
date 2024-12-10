@@ -7,9 +7,9 @@ import { Assignment5Component } from './assignments/assignment5/assignment5.comp
 import { Assignment6Component } from './assignments/assignment6/assignment6.component';
 import { Assignment7Component } from './assignments/assignment7/assignment7.component';
 import { Assignment8Component } from './assignments/assignment8/assignment8.component';
-import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HomeComponent } from './components/home/home.component';
 import { ContentComponent } from './components/content/content.component';
+import { AppRegisterFormComponent } from './components/registration-form/registration-form.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +30,8 @@ export const routes: Routes = [
     ,
     {
         path:'home', component:HomeComponent
+    },
+    {
+        path:'register', component:AppRegisterFormComponent
     }
 ];

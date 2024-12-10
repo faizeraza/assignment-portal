@@ -1,11 +1,10 @@
 /* Sidebar Container */
 .sidebar {
   background-color: #f4f4f4; /* Clean and consistent background */
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease-in-out; /* More efficient for sliding animation */
-  height: 100vh;
+  height: 100%;
   padding: 20px;
-  width: 200px;
+  width: 210px;
 /*  position: fixed; /* Ensures the sidebar stays in place */
   text-align: center;
   overflow-y: scroll;
@@ -32,7 +31,8 @@
   cursor: pointer; /* Indicates clickable items */
   font-size:xx-large;
   text-align: center;
-  height: 4vh;
+  /* height: 4vh; */
+  
 }
 
 .sidebar li:last-child {
@@ -52,7 +52,6 @@
   font-family: Arial, sans-serif; /* Clean and readable font */
   display: block; /* Ensures clickable area spans full item */
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  padding-top: 8px;
 }
 
 .sidebar a:hover {

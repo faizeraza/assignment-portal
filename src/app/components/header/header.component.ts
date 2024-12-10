@@ -1,5 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { environment } from '../../environments/environmet';
 
 
 @Component({
@@ -9,9 +10,14 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink]
 })
 export class HeaderComponent {
-  @Output() homeClicked = new EventEmitter<string>();
+  displayPath = environment.displayPictureUrl;
+  // @Output() clicked = new EventEmitter<string>();
 
-  homeClicker() {
-    this.homeClicked.emit('home');
-  }
+  // homeClicker() {
+  //   this.clicked.emit('home');
+  // }
+
+  // assignmentClicker() {
+  //   this.clicked.emit('assignment1');
+  // }
 }

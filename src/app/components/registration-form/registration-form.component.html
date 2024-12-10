@@ -1,0 +1,50 @@
+<div class="container mt-5 w-50 mb-5 ">
+    <div class="card shadow-sm" style="width: 50%; left: 25%;">
+      <div class="card-header bg-primary text-white text-center">
+        <h2>Register</h2>
+      </div>
+      <div class="card-body">
+        <form>
+          <!-- Name Field -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name" required (blur)="validateField('name', name)">
+            <div *ngIf="errors.name" class="text-danger">{{ errors.name }}</div>
+          </div>
+    
+          <!-- Phone No Field -->
+          <div class="mb-3">
+            <label for="phoneNo" class="form-label">Phone No</label>
+            <input type="text" class="form-control" id="phoneNo" [(ngModel)]="phoneNo" name="phoneNo" required (blur)="validateField('phoneNo', phoneNo)">
+            <div *ngIf="errors.phoneNo" class="text-danger">{{ errors.phoneNo }}</div>
+          </div>
+    
+          <!-- Email Field -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Id</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required (blur)="validateField('email', email)">
+            <div *ngIf="errors.email" class="text-danger">{{ errors.email }}</div>
+          </div>
+    
+          <!-- Username Field -->
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required (blur)="validateField('username', username)">
+            <div *ngIf="errors.username" class="text-danger">{{ errors.username }}</div>
+          </div>
+    
+          <!-- Password Field -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required (blur)="validateField('password', password)">
+            <div *ngIf="errors.password" class="text-danger">{{ errors.password }}</div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-center">
+        <button type="button" class="btn btn-primary me-2" (click)="register()">Register</button>
+        <button type="button" class="btn btn-secondary" (click)="clearForm()">Reset</button>
+      </div>
+    </div>
+  </div>
+  

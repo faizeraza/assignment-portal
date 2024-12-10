@@ -3,14 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home',
   imports: [],
-  template: `<div class="welcome-content">
+  template: `<div class="welcome-content ">
                 <h1 class="welcome-heading">Welcome to Assignments</h1>
-                <p class="welcome-subheading">Enjoy!</p>
+                <p class="welcome-subheading">By</p>
+                <p class="welcome-subheading">Faizan Raza</p>
              </div>`,
   styles: `        
         .welcome-content {
           animation: slideIn 1s ease-out;
-          width: fit-content;
+          width: 100%;
+          height: 700px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           border-radius: 10px;
           background: rgba(255, 255, 255, 0.1); /* Adds subtle transparency */
