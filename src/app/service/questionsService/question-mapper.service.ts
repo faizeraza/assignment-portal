@@ -15,7 +15,8 @@ export class QuestionMapperService {
     return this.http.get<Record<string, string>>(this.questionsMapUrl).pipe(
       map((questionsMap) => {
         if (questionNumber in questionsMap) {
-          return questionsMap[questionNumber];
+          let task: string =  `Task ${questionNumber}: \n` + questionsMap[questionNumber];
+          return task;
         } else {
           throw new Error('Question number not found');
         }

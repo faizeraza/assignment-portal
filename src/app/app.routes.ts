@@ -10,6 +10,8 @@ import { Assignment8Component } from './assignments/assignment8/assignment8.comp
 import { HomeComponent } from './components/home/home.component';
 import { ContentComponent } from './components/content/content.component';
 import { AppRegisterFormComponent } from './components/registration-form/registration-form.component';
+import { Assignment9Component } from './assignments/assignment9/assignment9.component';
+import { Assignment10Component } from './assignments/assignment10/assignment10.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +27,8 @@ export const routes: Routes = [
              { path: 'assignment6', component: Assignment6Component },
              { path: 'assignment7', component: Assignment7Component },
              { path: 'assignment8', component: Assignment8Component },
+             { path: 'assignment9', component: Assignment9Component },
+             { path: 'assignment10', component: Assignment10Component },
           ]
     }
     ,
