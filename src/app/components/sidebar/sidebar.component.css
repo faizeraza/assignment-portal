@@ -24,7 +24,9 @@
 
 .sidebar li {
   margin-bottom: 15px; /* Consistent spacing */
-  padding: 15px;
+  /* padding: 15px; */
+  width: 100%;
+  height: 50px;
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
   background-color: #98cbfe; /* Consistent item background */
@@ -46,6 +48,9 @@
 
 /* Sidebar Links */
 .sidebar a {
+  padding-top: 13px;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: #333333; /* Neutral text color */
   font-size: 1rem;

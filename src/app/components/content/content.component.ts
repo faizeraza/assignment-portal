@@ -19,7 +19,7 @@ export class ContentComponent {
   constructor(private questionService: QuestionMapperService){}
 
   flipCard(): void {
-    this.isFlipped = !this.isFlipped;
+    this.isFlipped = ! this.isFlipped;
     // this.cardContent = this.isFlipped ? 'You have flipped the card!' : this.cardContent;
   }
 
@@ -30,5 +30,6 @@ export class ContentComponent {
         this.cardContent = response;
       }
     );
+    this.isFlipped = false;
   }
 }
