@@ -9,7 +9,7 @@ import { Router, NavigationEnd, RouterLink, RouterOutlet } from '@angular/router
 })
 export class SidebarComponent implements OnInit {
   @Output() assignmentNumber = new EventEmitter<string>();
-
+  
   constructor(private router: Router) {}
 
   ngOnInit(): void {

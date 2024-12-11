@@ -2,7 +2,7 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
   AfterViewInit, AfterViewChecked, OnDestroy, Input, SimpleChanges, 
   NgModule} from '@angular/core';
 import { NgFor } from '@angular/common';
-import { LoggerService } from '../../logger/logger.service';
+import { LoggerService } from '../../../service/logger/logger.service';
 
 @Component({
   selector: 'app-life-cycle',
@@ -21,7 +21,7 @@ export class Assignment8Component implements
   OnDestroy 
   {
 
-    @Input() data: string = ''+new Date().toLocaleTimeString();
+    data:string = new Date().toLocaleTimeString();
     lifecycleMessages: string[]= [];
 
 

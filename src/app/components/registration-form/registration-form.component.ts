@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ValidationService } from '../../service/validation-service/validation-service.service';
+import { ValidationService } from '../../../service/validation-service/validation-service.service';
 @Component({
   selector: 'app-register-form',
   templateUrl: './registration-form.component.html',

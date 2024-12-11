@@ -1,6 +1,6 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { LoggerService } from '../../logger/logger.service';
+import { LoggerService } from '../../../service/logger/logger.service';
 
 @Component({
   selector: 'app-assignment6',

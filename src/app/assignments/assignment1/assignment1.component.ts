@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoggerService } from '../../logger/logger.service';
 import { CommonModule } from '@angular/common';
+import { LoggerService } from '../../../service/logger/logger.service';
 
 @Component({
   selector: 'app-assignment1',

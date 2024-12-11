@@ -7,11 +7,13 @@ import { Assignment5Component } from './assignments/assignment5/assignment5.comp
 import { Assignment6Component } from './assignments/assignment6/assignment6.component';
 import { Assignment7Component } from './assignments/assignment7/assignment7.component';
 import { Assignment8Component } from './assignments/assignment8/assignment8.component';
-import { HomeComponent } from './components/home/home.component';
 import { ContentComponent } from './components/content/content.component';
 import { AppRegisterFormComponent } from './components/registration-form/registration-form.component';
 import { Assignment9Component } from './assignments/assignment9/assignment9.component';
 import { Assignment10Component } from './assignments/assignment10/assignment10.component';
+import { Assignment11Component } from './assignments/assignment11/assignment11.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
     {
@@ -29,6 +31,7 @@ export const routes: Routes = [
              { path: 'assignment8', component: Assignment8Component },
              { path: 'assignment9', component: Assignment9Component },
              { path: 'assignment10', component: Assignment10Component },
+             { path: 'assignment11', component: Assignment11Component },
           ]
     }
     ,
@@ -37,5 +40,6 @@ export const routes: Routes = [
     },
     {
         path:'register', component:AppRegisterFormComponent
-    }
+    },
+    { path: '**', component: NotFoundComponent },
 ];

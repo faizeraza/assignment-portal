@@ -1,7 +1,7 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { QuestionMapperService } from '../../service/questionsService/question-mapper.service';
+import { QuestionMapperService } from '../../../service/questionsService/question-mapper.service';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 
 
@@ -25,11 +25,9 @@ export class ContentComponent {
 
   
   onAssignmentNumberSelected(assignment: string): void {
-    console.log("zuiii: "+assignment);
     this.questionService.getAnswer(assignment).subscribe(
       (response) => {
         this.cardContent = response;
-        console.log("zuiii: "+this.cardContent);
       }
     );
   }
