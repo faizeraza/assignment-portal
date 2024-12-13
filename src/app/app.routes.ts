@@ -17,6 +17,9 @@ import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
     {
+        path:'', component:HomeComponent
+    },
+    {
         path:'assignments',
         component: ContentComponent,
         children:
@@ -32,6 +35,7 @@ export const routes: Routes = [
              { path: 'assignment9', component: Assignment9Component },
              { path: 'assignment10', component: Assignment10Component },
              { path: 'assignment11', component: Assignment11Component },
+             { path: 'assignment12', component: Assignment11Component },
           ]
     }
     ,
