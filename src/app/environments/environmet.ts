@@ -6,5 +6,6 @@ export const environment = {
   companyName: 'Remiges',
   applicationName: 'Resgistration',
   logoUrl: 'assets/remiges-logo.svg',
-  displayPictureUrl: "assets/image/dp/dp.png"
+  displayPictureUrl: "assets/image/dp/dp.png",
+  auth_token:""
 };

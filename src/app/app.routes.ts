@@ -14,6 +14,8 @@ import { Assignment10Component } from './assignments/assignment10/assignment10.c
 import { Assignment11Component } from './assignments/assignment11/assignment11.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
+import { ListEmployeeComponent } from './employeeSystem/list-employee/list-employee.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 export const routes: Routes = [
     {
@@ -44,6 +46,12 @@ export const routes: Routes = [
     },
     {
         path:'register', component:AppRegisterFormComponent
+    },
+    {
+        path:'login', component:LoginFormComponent
+    },
+    {
+        path:'employees', component:ListEmployeeComponent
     },
     { path: '**', component: NotFoundComponent },
 ];

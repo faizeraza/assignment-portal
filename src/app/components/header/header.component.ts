@@ -10,6 +10,11 @@ import { environment } from '../../environments/environmet';
   imports: [RouterLink]
 })
 export class HeaderComponent {
+  logout() {
+    localStorage.clear();
+    console.log("storage cleared!!");
+    window.location.href = '/home';
+  }
   displayPath = environment.displayPictureUrl;
   // @Output() clicked = new EventEmitter<string>();
 

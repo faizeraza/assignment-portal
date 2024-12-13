@@ -9,27 +9,35 @@
     </a>
   </div> -->  
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0%;">
-    <div class="header container-fluid">
-      <a [routerLink]="['home']" class="navbar-brand">
-        <img src="assets/image/logos/remiges-logo.svg" alt="Remiges Logo" width="150" height="50" />
-      </a>
-  
-      <div class="collapse navbar-collapse " style="flex-direction: row-reverse;" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a [routerLink]="['register']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Register </a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['assignments']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Assignments </a>
-          </li>
-          <li class="nav-item">
-            <img src="{{displayPath}}" alt="Logo" class="rounded-circle navbar-link" style="height: 50px; object-fit: cover;">
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0%;">
+  <div class="header container-fluid">
+    <a [routerLink]="['home']" class="navbar-brand">
+      <img src="assets/image/logos/remiges-logo.svg" alt="Remiges Logo" width="150" height="50" />
+    </a>
+    <div class="collapse navbar-collapse " style="flex-direction: row-reverse;" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a [routerLink]="['login']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Login </a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link active mr-10" style="color: white;" aria-current="page" (click)="logout()"> Logout </button>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['register']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Register </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['employees']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Employee </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['assignments']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Assignments </a>
+        </li>
+        <li class="nav-item">
+          <img src="{{displayPath}}" alt="Logo" class="rounded-circle navbar-link" style="height: 50px; object-fit: cover;">
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
   
   
   

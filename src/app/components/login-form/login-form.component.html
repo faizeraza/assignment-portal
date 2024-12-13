@@ -1,0 +1,28 @@
+<div class="container mt-5 w-50 mb-5 ">
+    <div class="card shadow-sm" style="width: 50%; left: 25%;">
+        <div class="card-header bg-primary text-white text-center">
+            <h2>Login</h2>
+        </div>
+        <div class="card-body">
+            <div>
+                <!-- UserName Feild -->
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required (blur)="validateField('username', username)">
+                    <div *ngIf="errors.username" class="text-danger">{{ errors.username }}</div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required (blur)="validateField('password', password)">
+                    <div *ngIf="errors.password" class="text-danger">{{ errors.password }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            <button type="button" class="btn btn-primary me-2" (click)="login()">Login</button>
+            <button type="button" class="btn btn-secondary" (click)="clearForm()">Reset</button>
+        </div>
+    </div>
+</div>

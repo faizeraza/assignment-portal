@@ -29,7 +29,7 @@ export class ValidationService {
 
   validatePassword(password: string): string {
     if (!password.trim()) return 'Password is required.';
-    if (password.length < 6) return 'Password must be at least 6 characters long.';
+    if (password.length < 3) return 'Password must be at least 6 characters long.';
     return '';
   }
 }
