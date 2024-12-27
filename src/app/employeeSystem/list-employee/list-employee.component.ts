@@ -17,7 +17,7 @@ export class ListEmployeeComponent {
   constructor(private listemployeeService : ListEmployeeService) {}
 
   ngOnInit(): void {
-       this.getEmployees()
+       this.getEmployees();
   }
 
   getEmployees(): void {

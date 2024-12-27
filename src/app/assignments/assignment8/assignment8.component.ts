@@ -65,6 +65,7 @@ export class Assignment8Component implements
     private logLifecycle(message: string) {
       this.lifecycleMessages.push(message); // Add the message to the array
       this.logger.log(message); // Log the message to the console
+      // this.logger.error("I am error");
     }
 
     updateData(event:Event): void {

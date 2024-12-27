@@ -17,16 +17,16 @@
     <div class="collapse navbar-collapse " style="flex-direction: row-reverse;" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a [routerLink]="['login']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Login </a>
+          <a [routerLink]="['login']" class="nav-link active mr-10" style="color: white;" aria-current="page" *ngIf="isLoggedIn=='false'"> Login </a>
         </li>
         <li class="nav-item">
-          <button class="nav-link active mr-10" style="color: white;" aria-current="page" (click)="logout()"> Logout </button>
+          <button class="nav-link active mr-10" style="color: white;" aria-current="page" (click)="logout()" *ngIf="isLoggedIn=='true'"> Logout </button>
         </li>
         <li class="nav-item">
-          <a [routerLink]="['register']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Register </a>
+          <a [routerLink]="['register']" class="nav-link active mr-10" style="color: white;" aria-current="page"*ngIf="isLoggedIn=='false'"> Register </a>
         </li>
         <li class="nav-item">
-          <a [routerLink]="['employees']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Employee </a>
+          <a [routerLink]="['employees']" class="nav-link active mr-10" style="color: white;" aria-current="page" *ngIf="isLoggedIn=='true'"> Employee </a>
         </li>
         <li class="nav-item">
           <a [routerLink]="['assignments']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Assignments </a>

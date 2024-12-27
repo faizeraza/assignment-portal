@@ -16,6 +16,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListEmployeeComponent } from './employeeSystem/list-employee/list-employee.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
+import { Assignment12Component } from './assignments/assignment12/assignment12.component';
+import { RequestParamComponent } from './assignments/assignment12/sub_components/request-param/request-param.component';
+import { PathVariableComponent } from './assignments/assignment12/sub_components/path-variable/path-variable.component';
 
 export const routes: Routes = [
     {
@@ -37,8 +40,16 @@ export const routes: Routes = [
              { path: 'assignment9', component: Assignment9Component },
              { path: 'assignment10', component: Assignment10Component },
              { path: 'assignment11', component: Assignment11Component },
-             { path: 'assignment12', component: Assignment11Component },
-          ]
+             { path: 'assignment12', 
+               component: Assignment12Component,
+               children:
+               [
+                { path: 'first', component: RequestParamComponent }, 
+                { path: 'second/:id', component: PathVariableComponent },
+               ]
+             },
+             { path: 'assignment13', component: Assignment11Component }
+        ]
     }
     ,
     {

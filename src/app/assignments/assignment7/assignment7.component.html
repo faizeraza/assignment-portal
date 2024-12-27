@@ -1,6 +1,6 @@
 <div class="greeting">
     <p>Greetings, {{ username }}!</p>
     <button *ngIf="!showProfile" (click)="displayProfile($event)">Display Profile</button>
-    <img *ngIf="showProfile" [src]="profileImg" alt="Profile Image" class="profile-image" />
+    <img *ngIf="showProfile" [src]="profileImg" alt={{username}} class="profile-image" />
     <button *ngIf="showreset" (click)="reset($event)" class="reset"> Reset</button>
 </div>

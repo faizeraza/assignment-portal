@@ -7,8 +7,8 @@
             <div>
                 <!-- UserName Feild -->
                 <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required (blur)="validateField('username', username)">
+                    <label for="username" class="form-label">email</label>
+                    <input type="text" class="form-control" id="username" [(ngModel)]="username" name="email" required (blur)="validateField('email', username)">
                     <div *ngIf="errors.username" class="text-danger">{{ errors.username }}</div>
                 </div>
 
