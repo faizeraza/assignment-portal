@@ -1,0 +1,43 @@
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Simple Calculator</h2>
+    
+    <form class="form-group">
+      <div class="mb-3">
+        <label for="n1" class="form-label">Number 1:</label>
+        <input
+          type="number"
+          id="n1"
+          [(ngModel)]="n1"
+          class="form-control"
+          name="n1"
+          placeholder="Enter first number"
+          (click)="stop($event)"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="n2" class="form-label">Number 2:</label>
+        <input
+          type="number"
+          id="n2"
+          [(ngModel)]="n2"
+          class="form-control"
+          name="n2"
+          placeholder="Enter second number"
+          (click)="stop($event)"
+        />
+      </div>
+  
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-primary" (click)="addNumbers($event)">Add</button>
+        <button type="button" class="btn btn-secondary" (click)="resetForm($event)">Reset</button>
+      </div>
+    </form>
+  
+    <footer class="mt-4 text-center" *ngIf="result !== null">
+      <p class="fw-bold">
+        Sum of {{ n1 }} and {{ n2 }} is {{ result }}
+      </p>
+    </footer>
+  </div>
+  

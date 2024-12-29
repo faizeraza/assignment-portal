@@ -14,5 +14,6 @@ export class Assignment12Component {
   value : string ='default';
 
   stop(event: Event){
-    event.stopPropagation();  }
+    event.stopPropagation();  
+  }
 }

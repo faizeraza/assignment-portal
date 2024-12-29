@@ -1,0 +1,23 @@
+.tab-content-container {
+  height: 400px; /* Fixed height for the tab content area */
+  overflow-y: scroll; /* Ensures content overflow is contained */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.overflow-content {
+  height: 100%; /* Occupies the height of the container */
+  overflow-y: auto; /* Adds vertical scrollbar when content overflows */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.nav-pills .nav-link {
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}

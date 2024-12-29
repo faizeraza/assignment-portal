@@ -6,7 +6,7 @@
           <p style="width: 80%;">{{cardContent}}</p>
         </div>
         <div class="card-back">
-          <div *ngIf="isFlipped">
+          <div *ngIf="isFlipped" (click)="stop($event)">
             <router-outlet></router-outlet>
           </div>
         </div>

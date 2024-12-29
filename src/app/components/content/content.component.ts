@@ -32,4 +32,8 @@ export class ContentComponent {
     );
     this.isFlipped = false;
   }
+
+  stop(event: Event){
+    event.stopPropagation();  
+  }
 }

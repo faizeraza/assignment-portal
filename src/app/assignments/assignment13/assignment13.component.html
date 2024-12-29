@@ -1,0 +1,17 @@
+<div class="container my-4">
+    <h1 class="text-center">Summary</h1>
+    <p>
+      We implemented lazy loading to improve performance by loading modules only when needed. 
+      The <code>AssignmentsModule</code> was created and loaded lazily using the following code:
+    </p>
+    <div class="bg-light p-3 border rounded">
+        <pre><code class="typescript">
+&#123;
+    path: 'assignments',
+    loadChildren: () =&gt;
+    import(&#39;./assignments/assignments.module&#39;).then(m =&gt; m.AssignmentsModule),
+&#125;
+        </code></pre>
+    </div>
+    <p>This ensures faster initial load times and better modularity.</p>
+  </div>
