@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Book } from '../assignment18/model/Book';
+import { Book } from '../../components/model/Book';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { NgFor } from '@angular/common';
 

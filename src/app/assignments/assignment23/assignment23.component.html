@@ -1,0 +1,34 @@
+<div style="text-align:center; margin-top: 50px;">
+    <h1>{{ title }}</h1>
+    
+    <div>
+      <h3>UpperCasePipe</h3>
+      <p>{{ text | uppercase }}</p>
+    </div>
+  
+    <div>
+      <h3>LowerCasePipe</h3>
+      <p>{{ text | lowercase }}</p>
+    </div>
+  
+    <div>
+      <h3>CurrencyPipe</h3>
+      <p>{{ currencyValue | currency:'USD' }}</p>
+    </div>
+  
+    <div>
+      <h3>DecimalPipe</h3>
+      <p>{{ amount | number:'1.2-2' }}</p>
+    </div>
+  
+    <div>
+      <h3>PercentPipe</h3>
+      <p>{{ percentage | percent }}</p>
+    </div>
+  
+    <div>
+      <h3>DatePipe</h3>
+      <p>{{ date | date:'fullDate' }}</p>
+    </div>
+  </div>
+  

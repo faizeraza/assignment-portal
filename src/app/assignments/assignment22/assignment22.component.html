@@ -1,0 +1,21 @@
+<div class="container mt-4">
+    <h3 class="text-center">Pyramid Generator</h3>
+    <div class="form-group mb-3">
+      <label for="rowsInput">Enter Number of Rows:</label>
+      <input
+        type="number"
+        id="rowsInput"
+        class="form-control"
+        [(ngModel)]="rows"
+        placeholder="Enter number of rows"
+      />
+    </div>
+    <button class="btn btn-primary mb-3" (click)="generatePyramid()">Generate</button>
+  
+    <!-- Output Section -->
+    <div *ngIf="pyramid.length > 0" class="mt-4 text-center pyramid">
+      <h5>Generated Pyramid:</h5>
+      <div *ngFor="let row of pyramid" class="pyramid-row" [innerHTML]="row"></div>
+    </div>
+  </div>
+  

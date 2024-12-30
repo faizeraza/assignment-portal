@@ -1,1 +1,17 @@
-<p>assignment21 works!</p>
+<div class="container mt-4">
+    <h3 class="text-center">Calendar Details</h3>
+    <div class="form-group mb-3">
+        <label for="yearInput">Enter Year:</label>
+        <input type="number" id="yearInput" class="form-control" [(ngModel)]="year" placeholder="e.g., 2024">
+    </div>
+    <button class="btn btn-primary mb-3" (click)="calculateDetails()">Show</button>
+
+    <!-- Output Section -->
+    <div *ngIf="numberOfDays > 0" class="mt-4">
+        <h5>Results for the Year {{ year }}:</h5>
+        <p><strong>Leap Year:</strong> {{ isLeapYear }}</p>
+        <p><strong>Number of Days:</strong> {{ numberOfDays }}</p>
+        <p><strong>Total Holidays (Saturdays and Sundays):</strong> {{ totalHolidays }}</p>
+    </div>
+</div>
+  

@@ -1,0 +1,45 @@
+.container {
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  .pyramid {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left; /* Left align for better readability */
+  }
+  
+  .pyramid-row {
+    white-space: pre;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .pyramid {
+      font-size: 14px;
+    }
+  }
+  
