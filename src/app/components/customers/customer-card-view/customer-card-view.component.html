@@ -1,0 +1,17 @@
+<div class="container mt-4 customer">
+    <div class="row" data-bs-spy="scroll" style="overflow-y: scroll; height: 65%;">
+        <div class="col-md-4" *ngFor="let customer of customers">
+            <div class="card mb-4 shadow-sm">
+                <img [src]="customer.profilePicture" class="card-img-top" alt="{{customer.name}}">
+                <div class="card-body">
+                <h5 class="card-title">{{ customer.name }}</h5>
+                    <p class="card-text">
+                        <strong>Email:</strong> {{ customer.email }}<br>
+                        <strong>Phone:</strong> {{ customer.phone }}<br>
+                        <strong>Address:</strong> {{ customer.address }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

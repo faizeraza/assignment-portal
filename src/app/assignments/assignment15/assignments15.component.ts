@@ -24,8 +24,4 @@ export class Assignment15Component {
   selectTab(tabId: string): void {
     this.activeTab = tabId;
   }
-
-  stop(event: Event){
-    event.stopPropagation();  
-  }
 }

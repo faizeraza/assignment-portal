@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { environment } from '../../environments/environmet';
-import { LoginFormComponent } from '../login-form/login-form.component';
+// import { LoginFormComponent } from '../login-form/login-form.component';
 import { CommonModule } from '@angular/common';
 
 
@@ -12,6 +12,13 @@ import { CommonModule } from '@angular/common';
   imports: [RouterLink, CommonModule]
 })
 export class HeaderComponent implements OnInit {
+
+  @Output() clicked = new EventEmitter<boolean>();
+
+  homeClicker() {
+    this.clicked.emit(true);
+  }
+  
   constructor(){}
   isLoggedIn = localStorage.getItem("loggedIn");
   ngOnInit(): void {
@@ -26,13 +33,6 @@ export class HeaderComponent implements OnInit {
     localStorage.setItem('loggedIn',`${false}`);
   }
   displayPath = environment.displayPictureUrl;
-  // @Output() clicked = new EventEmitter<string>();
 
-  // homeClicker() {
-  //   this.clicked.emit('home');
-  // }
-
-  // assignmentClicker() {
-  //   this.clicked.emit('assignment1');
-  // }
 }
+

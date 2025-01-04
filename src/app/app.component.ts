@@ -1,17 +1,23 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
-import { QuestionMapperService } from '../service/questionsService/question-mapper.service';
-import { ContentComponent } from "./components/content/content.component";
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./components/footer/footer.component";
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HeaderComponent, RouterOutlet, FooterComponent]
+  imports: [HeaderComponent, RouterOutlet, FooterComponent, NgIf]
 })
-export class AppComponent {
-  
+export class AppComponent{
+  isCustomerClicked = false;
+
+  constructor(private router: Router){}
+
+  customerClicked(isClicked: boolean){
+    console.log("isClicked: "+isClicked);
+    this.isCustomerClicked = isClicked;
+  }
+
 }

@@ -16,15 +16,15 @@ export class Assignment6Component {
   // constructor(private logger: LoggerService){
   //   this.logger.log("Using a logger service");
   // }
-  displayProfile(event: Event): void {
+  displayProfile(): void {
     this.showProfile = true; 
     this.showreset = true
-    event.stopPropagation();
+    // event.stopPropagation();
   }
 
-  reset(event: Event): void {
+  reset(): void {
     this.showProfile = false; 
     this.showreset = false;
-    event.stopPropagation();
+    // event.stopPropagation();
   }
 }

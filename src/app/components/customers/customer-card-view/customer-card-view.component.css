@@ -1,0 +1,33 @@
+.customer{
+  width: 1300px;
+  height: 850px;
+}
+  .card {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+.card-img-top {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  

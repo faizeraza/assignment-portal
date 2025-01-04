@@ -1,6 +1,7 @@
 .tab-content-container {
-  height: 400px; /* Fixed height for the tab content area */
-  overflow-y: scroll; /* Ensures content overflow is contained */
+  height: 78vh; /* Fixed height for the tab content area */
+  width: 140vh;
+  overflow-y: auto; /* Ensures content overflow is contained */
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fff;

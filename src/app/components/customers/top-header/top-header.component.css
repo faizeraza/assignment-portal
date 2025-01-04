@@ -1,0 +1,52 @@
+.top-header {
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+  }
+  
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tlogo {
+    width:110px;
+    height:51px;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+  
+  .app-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navigation-menu ul li {
+    margin-left: 20px;
+  }
+  
+  .navigation-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navigation-menu ul li a:hover {
+    color: #ffcc00; /* Yellow on hover */
+  }
+  

@@ -1,0 +1,76 @@
+{
+  "customers": [
+    {
+      "name": "Faizan Raza",
+      "email": "mohammad.raza@remiges.tech",
+      "phone": "555-1234",
+      "address": "Sector12, KoparKhairne",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 100.25
+    },
+    {
+      "name": "Karanjeet Bisen",
+      "email": "karanjeet.bisen@remiges.tech",
+      "phone": "555-5678",
+      "address": "Sector4, KoparKhairne",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 250.75
+    },
+    {
+      "name": "Vedant Kandalkar",
+      "email": "vedant.kandalkar@remiges.tech",
+      "phone": "555-5678",
+      "address": "Sector4, KoparKhairne",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 300.50
+    },
+    {
+      "name": "Ramesh Singh",
+      "email": "ramesh.singh@remiges.tech",
+      "phone": "555-6789",
+      "address": "Sector5, Ghansoli",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 150.00
+    },
+    {
+      "name": "Shweta Gupta",
+      "email": "shweta.gupta@remiges.tech",
+      "phone": "555-3456",
+      "address": "Sector7, Vashi",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 175.25
+    },
+    {
+      "name": "Anil Kumar",
+      "email": "anil.kumar@remiges.tech",
+      "phone": "555-5432",
+      "address": "Sector2, Sanpada",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 220.75
+    },
+    {
+      "name": "Ramesh Singh",
+      "email": "ramesh.singh@remiges.tech",
+      "phone": "555-6789",
+      "address": "Sector5, Ghansoli",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 150.00
+    },
+    {
+      "name": "Shweta Gupta",
+      "email": "shweta.gupta@remiges.tech",
+      "phone": "555-3456",
+      "address": "Sector7, Vashi",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 175.25
+    },
+    {
+      "name": "Anil Kumar",
+      "email": "anil.kumar@remiges.tech",
+      "phone": "555-5432",
+      "address": "Sector2, Sanpada",
+      "profilePicture": "/assets/image/dp/dp.png",
+      "orderTotal": 220.75
+    }
+  ]
+}

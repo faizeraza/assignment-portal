@@ -1,11 +1,12 @@
-<div class="container mt-4">
-    <h3 class="text-center">Directive Demo: ngFor</h3>
+<div class="container mt-4" style="overflow-y: scroll; height: 500px;">
+    <h3 class="text-center">Book Store: using ngFor</h3>
     <div class="row">
       <div class="col-md-4 mb-3" *ngFor="let book of books">
         <div class="card shadow-sm">
           <div class="card-body">
             <h5 class="card-title">{{ book.title }}</h5>
-            <p class="card-text">{{ book.description }}</p>
+            <img src="{{book.path}}" alt="book" style="width: 50%;">
+            <p class="card-text" style="height: 100px; overflow-y: scroll;">{{ book.description }}</p>
           </div>
         </div>
       </div>

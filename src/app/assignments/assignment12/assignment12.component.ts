@@ -13,7 +13,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 export class Assignment12Component {
   value : string ='default';
 
-  stop(event: Event){
-    event.stopPropagation();  
-  }
+  // stop(event: Event){
+  //   event.stopPropagation();  
+  // }
 }

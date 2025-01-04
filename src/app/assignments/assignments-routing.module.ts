@@ -25,6 +25,9 @@ import { Assignment20Component } from './assignment20/assignment20.component';
 import { Assignment21Component } from './assignment21/assignment21.component';
 import { Assignment22Component } from './assignment22/assignment22.component';
 import { Assignment23Component } from './assignment23/assignment23.component';
+import { Assignment24Component } from './assignment24/assignment24.component';
+import { Assignment25Component } from './assignment25/assignment25.component';
+import { Assignment26Component } from './assignment26/assignment26.component';
 
 const routes: Routes = [
      { path: 'assignment1', component: Assignment1Component },
@@ -57,6 +60,9 @@ const routes: Routes = [
      { path: 'assignment21', component: Assignment21Component },
      { path: 'assignment22', component: Assignment22Component },
      { path: 'assignment23', component: Assignment23Component },
+     { path: 'assignment24', component: Assignment24Component },
+     { path: 'assignment25', component: Assignment25Component },
+     { path: 'assignment26', component: Assignment26Component },
 ];
 
 @NgModule({

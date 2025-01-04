@@ -1,14 +1,3 @@
-  <!-- <div class="header">
-    <div class="hamburger" (click)="toggleSidebar()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <a [routerLink]="['']">
-        <img src="assets/image/assets/remiges-logo.svg" alt="Remiges Logo" class="logo" />
-    </a>
-  </div> -->  
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-top: 0%;">
   <div class="header container-fluid">
     <a [routerLink]="['home']" class="navbar-brand">
@@ -23,13 +12,34 @@
           <button class="nav-link active mr-10" style="color: white;" aria-current="page" (click)="logout()" *ngIf="isLoggedIn=='true'"> Logout </button>
         </li>
         <li class="nav-item">
-          <a [routerLink]="['register']" class="nav-link active mr-10" style="color: white;" aria-current="page"*ngIf="isLoggedIn=='false'"> Register </a>
+          <a [routerLink]="['register']" class="nav-link active mr-10" style="color: white;" aria-current="page" *ngIf="isLoggedIn=='false'"> Register </a>
         </li>
         <li class="nav-item">
           <a [routerLink]="['employees']" class="nav-link active mr-10" style="color: white;" aria-current="page" *ngIf="isLoggedIn=='true'"> Employee </a>
         </li>
         <li class="nav-item">
           <a [routerLink]="['assignments']" class="nav-link active mr-10" style="color: white;" aria-current="page"> Assignments </a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: white;"
+          >
+            Customer
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" [routerLink]="['customers']" (click)="homeClicker()">Customers</a></li>
+            <li><a class="dropdown-item" [routerLink]="['settings']">Order</a></li>
+            <li><a class="dropdown-item" [routerLink]="['settings']">About</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" [routerLink]="['help']">Help</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <img src="{{displayPath}}" alt="Logo" class="rounded-circle navbar-link" style="height: 50px; object-fit: cover;">
@@ -38,6 +48,3 @@
     </div>
   </div>
 </nav>
-  
-  
-  

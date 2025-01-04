@@ -11,10 +11,10 @@ import { NgFor } from '@angular/common';
 })
 export class Assignment20Component {
   books: Book[] = [
-    { title: 'Book 1', description: 'This is the description of Book 1.' },
-    { title: 'Book 2', description: 'This is the description of Book 2.' },
-    { title: 'Book 3', description: 'This is the description of Book 3.' },
-    { title: 'Book 4', description: 'This is the description of Book 4.' }
+    { title: 'Book 1', description: 'This is the description of Book 1.', path: "assets/book/book1.jpg" },
+    { title: 'Book 2', description: 'This is the description of Book 2.', path: "assets/book/book2.jpg" },
+    { title: 'Book 3', description: 'This is the description of Book 3.', path: "assets/book/book3.jpg" },
+    { title: 'Book 4', description: 'This is the description of Book 4.', path: "assets/book/book1.jpg" }
   ];
 
   handleRating(event: { title: string; rating: number }): void {

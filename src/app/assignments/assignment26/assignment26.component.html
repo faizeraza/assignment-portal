@@ -1,0 +1,46 @@
+<app-top-header></app-top-header>
+<h1 class="m-4"  style="color: #007bff;">Customers</h1>
+  <!-- Action Bar -->
+  <div class="d-flex justify-content-between mb-3 m-4">
+    <div>
+      <!-- View Switch -->
+      <button
+        class="btn btn-sm"
+        [class.btn-primary]="currentView === 'card'"
+        [class.btn-outline-primary]="currentView !== 'card'"
+        (click)="setView('card')"
+      >
+        Card View
+      </button>
+      <button
+        class="btn btn-sm"
+        [class.btn-primary]="currentView === 'list'"
+        [class.btn-outline-primary]="currentView !== 'list'"
+        (click)="setView('list')"
+      >
+        List View
+      </button>
+      <button class="btn btn-outline-success btn-sm">+ New Customer</button>
+    </div>
+    <div>
+      <!-- Filter Input -->
+      <input
+        type="text"
+        class="form-control form-control-sm"
+        placeholder="Filter:"
+        [(ngModel)]="filterText"
+      />
+    </div>
+  </div>
+<div>
+  <!-- Card View -->
+  <div
+    class="row" style="width: 100%;"
+    *ngIf="currentView === 'list'"
+  >
+  <app-customer-list-view [customers] = "filteredCustomers()"></app-customer-list-view>
+  </div>
+  <div *ngIf="currentView === 'card'">
+    <app-customer-card-view [customers] = "filteredCustomers()"></app-customer-card-view>
+  </div>
+</div>
