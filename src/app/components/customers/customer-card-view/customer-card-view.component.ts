@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TopHeaderComponent } from '../top-header/top-header.component';
 import * as customerData from '../../../../assets/customer-data.json';
 
@@ -11,6 +11,11 @@ import * as customerData from '../../../../assets/customer-data.json';
 })
 export class CustomerCardViewComponent {
   @Input() customers: any[] = [];
+  @Output() detailsRequested = new EventEmitter<any>();
+
+  openDetails(customer: any): void {
+    this.detailsRequested.emit(customer);
+  }
 
   constructor(){
     // console.log("customers:  "+this.customers);

@@ -27,6 +27,9 @@
         <td>{{ customer.city }}</td>
         <td>{{ customer.state }}</td>
         <td>${{ customer.orderTotal.toFixed(2) }}</td>
+        <td>                         
+          <button class="btn btn-sm btn-outline-primary" (click)="openDetails(customer)">Details</button>
+        </td>
       </tr>
     </tbody>
   </table>

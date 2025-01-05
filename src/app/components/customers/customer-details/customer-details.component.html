@@ -1,0 +1,16 @@
+<h2 mat-dialog-title class="dialog-title">Customer Details</h2>
+<div mat-dialog-content class="dialog-content">
+  <div class="profile-container">
+    <img [src]="data.profilePicture" alt="Profile Picture" class="profile-pic" />
+  </div>
+  <div class="details-container">
+    <p><span class="detail-label">Name:</span> {{ data.name }}</p>
+    <p><span class="detail-label">Email:</span> {{ data.email }}</p>
+    <p><span class="detail-label">Phone:</span> {{ data.phone }}</p>
+    <p><span class="detail-label">Address:</span> {{ data.address }}</p>
+  </div>
+  <div id="map" class="map-container"></div>
+</div>
+<!-- <div mat-dialog-actions class="dialog-actions">
+  <button mat-raised-button color="primary" mat-dialog-close>Close</button>
+</div> -->

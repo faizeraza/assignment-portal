@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CustomerServiceService } from '../../../../service/customer-service/customer-service.service';
 
@@ -11,7 +11,11 @@ import { CustomerServiceService } from '../../../../service/customer-service/cus
 })
 export class CustomerListViewComponent {
   @Input() customers: any[] = [];
+  @Output() detailsRequested = new EventEmitter<any>();
 
+  openDetails(customer: any): void {
+    this.detailsRequested.emit(customer);
+  }
   constructor() {}
 
 }

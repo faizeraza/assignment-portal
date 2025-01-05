@@ -38,16 +38,17 @@
     border-radius: 8px;
     background-color: #fff;
     position: absolute;
-    border: #000000;
   }
   
   .card-back {
     transform: rotateY(180deg);
+    background-color:lightblue;
   }
 
   .card-back-content{
     border: 10px;
     width: 90%;
     height: 90%;
+    background-color: #fff;
   }
   
