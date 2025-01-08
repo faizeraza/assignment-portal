@@ -30,13 +30,16 @@
   
       <div class="d-flex justify-content-between">
         <button type="button" class="btn btn-primary" (click)="addNumbers($event)">Add</button>
+        <button type="button" class="btn btn-primary" (click)="substract($event)">Substract</button>
+        <button type="button" class="btn btn-primary" (click)="multiply($event)">Multiply</button>
+        <button type="button" class="btn btn-primary" (click)="divide($event)">Divide</button>
         <button type="button" class="btn btn-secondary" (click)="resetForm($event)">Reset</button>
       </div>
     </form>
   
     <footer class="mt-4 text-center" *ngIf="result !== null">
       <p class="fw-bold">
-        Sum of {{ n1 }} and {{ n2 }} is {{ result }}
+        {{operation}} of {{ n1 }} and {{ n2 }} is {{ result }}
       </p>
     </footer>
   </div>

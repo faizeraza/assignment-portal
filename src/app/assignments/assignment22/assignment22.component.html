@@ -10,6 +10,16 @@
         placeholder="Enter number of rows"
       />
     </div>
+    <div class="form-group mb-3">
+      <label for="rowsInput">Enter Character</label>
+      <input
+        id="rowsInput"
+        class="form-control"
+        [(ngModel)]="character"
+        placeholder="Enter Character"
+      />
+    </div>
+    
     <button class="btn btn-primary mb-3" (click)="generatePyramid()">Generate</button>
   
     <!-- Output Section -->

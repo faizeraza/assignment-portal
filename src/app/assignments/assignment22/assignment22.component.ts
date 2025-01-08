@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class Assignment22Component {
   rows: number = 0;
+  character: string = '*';
   pyramid: string[] = [];
 
   generatePyramid(): void {
@@ -21,8 +22,22 @@ export class Assignment22Component {
     this.pyramid = [];
     for (let i = 0; i < this.rows; i++) {
       const spaces = '&nbsp;'.repeat(this.rows - i - 1); // Dynamic spacing
-      const stars = '*'.repeat(2*i + 1); // Increasing stars per row
+      const stars = this.generatestring(2*i + 1); // print clockwise string per row
       this.pyramid.push(`${spaces}${stars}${spaces}`); // Combine spaces and stars
     }
+  }
+  generatestring(currentrow: number){
+    let index: number = 0;
+    let currentstr: string = '';
+    for (let i = 0; i< currentrow; i++){
+      if(index < this.character.length){
+        currentstr = currentstr+this.character[index]
+        index++;
+      }
+      else{
+        index=0;
+      }
+    }
+    return currentstr;
   }
 }

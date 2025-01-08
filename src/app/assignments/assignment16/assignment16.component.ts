@@ -12,11 +12,37 @@ export class Assignment16Component {
   n1: number | null = null;
   n2: number | null = null;
   result: number | null = null;
+  operation: string | null = null;
 
   addNumbers(event: Event) {
     this.stop(event);
     if (this.n1 !== null && this.n2 !== null) {
       this.result = this.n1 + this.n2;
+      this.operation = "Sum";
+    }
+  }
+
+  substract(event: Event) {
+    this.stop(event);
+    if (this.n1 !== null && this.n2 !== null) {
+      this.result = this.n1 - this.n2;
+      this.operation = "substract";
+    }
+  }
+
+  multiply(event: Event) {
+    this.stop(event);
+    if (this.n1 !== null && this.n2 !== null) {
+      this.result = this.n1 * this.n2;
+      this.operation = "multiply";
+    }
+  }
+
+  divide(event: Event) {
+    this.stop(event);
+    if (this.n1 !== null && this.n2 !== null) {
+      this.result = this.n1 / this.n2;
+      this.operation = "divide";
     }
   }
 

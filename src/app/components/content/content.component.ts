@@ -15,7 +15,7 @@ export class ContentComponent {
   sidebarVisible: boolean = true; // Default state
   isFlipped: boolean = false;
   cardContent: string = 'Select Any Assignment!';
-
+  prevAssignment: string = '';
   constructor(private questionService: QuestionMapperService){}
 
   flipCard(): void {
@@ -30,10 +30,14 @@ export class ContentComponent {
         this.cardContent = response;
       }
     );
-    this.isFlipped = false;
+    if(assignment!=this.prevAssignment){
+      this.isFlipped = false;
+    }
+    this.prevAssignment = assignment;
   }
 
   stop(event: Event){
+    console.log("Stopped Propogation of clicking event");
     event.stopPropagation();  
   }
 }
